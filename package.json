@@ -6,13 +6,16 @@
   "dependencies": {
     "bootstrap": "^4.0.0-beta",
     "gulp": "^3.9.1",
-    "gulp-watch": "^4.3.11"
+    "gulp-html-minifier": "^0.1.8",
+    "gulp-watch": "^4.3.11",
+    "popper.js": "^1.12.6"
   },
   "devDependencies": {
     "browser-sync": "^2.18.13",
     "gulp-auto-reload": "^0.1.0",
     "gulp-autoprefixer": "^4.0.0",
     "gulp-cssmin": "^0.2.0",
+    "gulp-livereload": "^3.8.1",
     "gulp-plumber": "^1.1.0",
     "gulp-rename": "^1.2.2",
     "gulp-ruby-sass": "^2.1.1",
