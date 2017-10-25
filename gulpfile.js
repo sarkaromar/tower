@@ -12,11 +12,11 @@ var sass          = require('gulp-sass'),
     rename        = require('gulp-rename'),
     gulpIf        = require('gulp-if'),
     htmlmin       = require('gulp-html-minifier'),
-    livereload    = require('gulp-livereload');
+    livereload    = require('gulp-livereload'),
+    imagemin      = require('gulp-imagemin');
+    
 
-
-    // task start
-
+    // serve start
     gulp.task('browserSync', function() {
       browserSync.init({
         server: {
@@ -25,6 +25,7 @@ var sass          = require('gulp-sass'),
       })
     });
 
+    // vendors taks
     gulp.task('vendors', function() {
     // bootstrap
       gulp.src('node_modules/bootstrap/dist/**/*.min.css')
@@ -37,6 +38,7 @@ var sass          = require('gulp-sass'),
       
     });
 
+    // Sass task
     gulp.task('sass', function(){
       return gulp.src('app/sass/*.scss')
         .pipe(sass())
@@ -59,10 +61,19 @@ var sass          = require('gulp-sass'),
         }))
     });
 
+    // images task
+    // gulp.task('image', () =>
+    //   gulp.src('app/images/*')
+    //     .pipe(imagemin())
+    //     .pipe(gulp.dest('app/img'))
+    // );
+    
+    // watch task
     gulp.task('watch:sass', function () {
       gulp.watch('app/sass/*.scss', ['sass']);
     });
 
+    // gulp build task
     gulp.task('build', function() {
       // bootstrap
       gulp.src('node_modules/bootstrap/dist/**/*.min.css')
@@ -85,6 +96,11 @@ var sass          = require('gulp-sass'),
       gulp.src('app/*.html')
       .pipe(htmlmin({collapseWhitespace: true}))
       .pipe(gulp.dest('dist'))
+      //images
+      gulp.src('app/images/*')
+      .pipe(imagemin())
+      .pipe(gulp.dest('dist/images'))
     });
+
 // default task
 gulp.task('default', ['sass', 'watch:sass', 'vendors', 'browserSync']);

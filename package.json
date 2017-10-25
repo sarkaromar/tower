@@ -15,6 +15,7 @@
     "gulp-auto-reload": "^0.1.0",
     "gulp-autoprefixer": "^4.0.0",
     "gulp-cssmin": "^0.2.0",
+    "gulp-imagemin": "^3.4.0",
     "gulp-livereload": "^3.8.1",
     "gulp-plumber": "^1.1.0",
     "gulp-rename": "^1.2.2",

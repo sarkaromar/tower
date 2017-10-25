@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Allura|Fredoka+One|Hind+Vadodara');
+
+// font-family: 'Fredoka One', cursive;
+// font-family: 'Hind Vadodara', sans-serif;
+// font-family: 'Allura', cursive;
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #f7f8f9 !important;
+    font-family: 'Hind Vadodara', sans-serif;
+}
+// Default settings
+.btn{
+    border: 0px !important;
+    border-radius: 0px !important;
+}
+.btn-primary{
+    background: #2196f3 !important;
+}
+.form-control{
+    border-radius: 0px !important;
+}
+
+// Custom Style
+#header{
+    background: rgba(0,0,0,.15);
+    position: absolute;
+    left: 0;
+    right: 0;
+    .logo{
+        a{
+            color: #ffffff;
+            text-decoration: none;
+            h1{
+                padding: 15px 0px;
+                font-family: 'Fredoka One', cursive;
+            }
+        }
+    }
+    .navbar-nav{
+        .nav-link{
+            color: #ffffff;
+        }
+    }
+}
+
+.banner{
+    background: url(../images/bin.jpg) no-repeat center;
+    background-size: cover;
+    min-height: 550px;
+    text-align: center;
+    padding: 50px;
+    .banner-txt{
+        position: absolute;
+        top: 200px;
+        left: 0px;
+        right: 0px;
+        color: #ffffff;
+        h2{
+            font-family: 'Hind Vadodara', sans-serif;
+        }
+        p{
+            font-family: 'Allura', cursive;
+        }
+    }
+}
+
+.search{
+    margin-bottom: 150px;
+    .search-opt{
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        top: -120px;
+        padding: 0px;
+        .btn-search{
+        }
+        .form-group{
+            padding: 5px 5px;
+        }
+        .nav-tabs{
+            .nav-link{
+                background: rgba(33, 150, 243, 0.50);
+                border-radius: 0px;
+                border: 0px;
+                padding: 12px 30px;
+                color: #ffffff;
+                &:hover{
+                    background: rgba(33, 150, 243, 0.75);
+                }
+                &.active{
+                    background: rgba(33, 150, 243, 0.95);
+                }
+            }
+        }
+        .tab-content{
+            background: #ffffff;
+            padding: 20px  40px;
+            box-shadow: 0px -1px 30px -10px #000000
+        }
+    }
+}
+
+#footer{
+    background: #111111;
+}
