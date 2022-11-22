@@ -11,7 +11,7 @@
     "popper.js": "^1.12.6"
   },
   "devDependencies": {
-    "browser-sync": "^2.18.13",
+    "browser-sync": "^2.27.10",
     "gulp-auto-reload": "^0.1.0",
     "gulp-autoprefixer": "^4.0.0",
     "gulp-cssmin": "^0.2.0",
